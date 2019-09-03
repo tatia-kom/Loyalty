@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Авторизация кассира</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+</head>
+<body>
+    <section class="login-bg">
+        <div class="auth-block">
+            <span class="auth-block__close auth-block__close--big_top"></span>
+
+            <p class="auth-block__title">Вход в систему</p>
+
+            <input type="text" class="auth-block__input" placeholder="E-mail">
+            <input type="text" class="auth-block__input" placeholder="Пароль">
+
+            <p class="auth-block__forget"><a href="#" class="auth-block__link">Забыли пароль?</a></p>
+
+            <div class="auth-block__choice">
+                <label class="radio">
+                    <input type="radio" class="radio__input" name="userType">
+                    <div class="radio__text">Владелец</div>
+                </label>
+                <label class="radio">
+                    <input type="radio" class="radio__input" name="userType">
+                    <div class="radio__text">Кассир</div>
+                </label>
+            </div>
+
+            <div class="text-center">
+                <button class="button auth-block__button">Войти</button>
+            </div>
+
+            <p class="auth-block__agree">Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+        </div>
+    </section>
+</body>
+</html>
