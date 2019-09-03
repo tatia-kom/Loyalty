@@ -1,21 +1,23 @@
 @import "../../base/var";
 
 .auth-block {
-  position: absolute;
   background: white;
   border-radius: 5px;
   width: 590px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+  position: relative;
   padding: 84px 60px 58px;
 
   &--reset {
-    padding: 56px 50px 40px;
+    padding: 56px 60px 40px;
   }
 
   &--reset2 {
-    padding: 81px 50px 73px;
+    padding: 81px 60px 73px;
+  }
+
+  &--reg {
+    padding: 92px 60px 34px;
   }
 
   &__close {
@@ -65,6 +67,10 @@
 
     &--reset {
       margin-bottom: 31px;
+    }
+
+    &--reg {
+      margin-bottom: 40px;
     }
   }
 
