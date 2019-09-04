@@ -2,6 +2,15 @@
 
 .radio {
   margin-right: 10px;
+  display: block;
+
+  &--create {
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &__input {
     position: absolute;

@@ -6,7 +6,27 @@ $numberFont: 'Montserrat Bold';
 
 // colors
 
-$bodyColor: #E5E5E5;
+$bodyColor: #FBFBFB;
 $yellow: #FFC700;
 $tableGrey: rgba(0, 0, 0, 0.06);
 $textColor: #363636;
+
+// mixins
+
+@mixin placeholderColor($color) {
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+  &::placeholder {
+    color: $color;
+  }
+}

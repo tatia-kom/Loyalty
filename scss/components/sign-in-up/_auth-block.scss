@@ -92,21 +92,7 @@
     padding: 8px 9px 6px;
     margin-top: 15px;
 
-    &::-moz-placeholder {
-      color: rgba(0, 0, 0, 0.5);
-    }
-    &::-webkit-input-placeholder {
-      color: rgba(0, 0, 0, 0.5);
-    }
-    &:-ms-input-placeholder {
-      color: rgba(0, 0, 0, 0.5);
-    }
-    &::-ms-input-placeholder {
-      color: rgba(0, 0, 0, 0.5);
-    }
-    &::placeholder {
-      color: rgba(0, 0, 0, 0.5);
-    }
+    @include placeholderColor(rgba(0, 0, 0, 0.5));
   }
 
   &__forget {
