@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Редактирование кассира</title>
+
+    <link rel="stylesheet" type="text/css" href="css/select-default-style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+</head>
+<body>
+    <section class="page">
+
+        <!-- MENU -->
+
+        <nav class="menu">
+            <!-- Add class "menu__link--active" for active link like below -->
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu1.svg" alt=""></span>
+                Программы лояльности
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu2.svg" alt=""></span>
+                Отчёты
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu3.svg" alt=""></span>
+                Мои магазины
+            </a>
+            <a href="#" class="menu__link menu__link--active">
+                <span class="menu__icon"><img src="img/menu4.svg" alt=""></span>
+                Кассиры
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu5.svg" alt=""></span>
+                СМС-рассылки
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu6.svg" alt=""></span>
+                Тарифы
+            </a>
+        </nav>
+
+        <div class="page__block">
+
+            <!-- HEADER -->
+
+            <div class="page__header">
+                <div class="page__profile" id="header-profile">
+                    <div class="page__ava">KK</div>
+                    <p class="page__name">
+                        Константин Константинопольский
+                        <span class="page__company">Название компании</span>
+                    </p>
+                    <div class="page__profile-menu" id="header-profile-menu">
+                        <a href="#">Настройки</a>
+                        <a href="#">Выйти</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+
+            <div class="page__content page__content--create">
+
+                <div class="page__top page__top--create">
+                    <span class="page__back"><img src="img/back.svg" alt=""></span>
+                    <h1 class="page__title page__title--create">Редактирование кассира</h1>
+                </div>
+
+                <div class="create-block">
+                    <p class="create-block__label create-block__label--bold">Данные кассира</p>
+
+                    <div class="create-block__edit">
+                        <p class="create-block__label create-block__label--light">Имя</p>
+                        <input type="text" class="create-block__input create-block__input--full create-block__input--edit" value="Екатерина">
+                        <span class="create-block__clear-input"></span>
+                    </div>
+
+                    <div class="create-block__edit">
+                        <p class="create-block__label create-block__label--light">Отчество</p>
+                        <input type="text" class="create-block__input create-block__input--full create-block__input--edit" value="Владимировна">
+                        <span class="create-block__clear-input"></span>
+                    </div>
+
+                    <div class="create-block__edit">
+                        <p class="create-block__label create-block__label--light">Фамилия</p>
+                        <input type="text" class="create-block__input create-block__input--full create-block__input--edit" value="Иванова">
+                        <span class="create-block__clear-input"></span>
+                    </div>
+
+                    <div class="create-block__edit">
+                        <p class="create-block__label create-block__label--light">Пароль</p>
+                        <input type="text" class="create-block__input create-block__input--full create-block__input--edit" value="123456789">
+                        <span class="create-block__clear-input"></span>
+                    </div>
+
+                    <p class="create-block__label create-block__label--light">Выбрать магазин</p>
+                    <div class="create-block__select create-block__select--edit">
+                        <select data-placeholder="Магазин" class="js-custom_select">
+                            <option>Магазин 1</option>
+                            <option>Магазин 2</option>
+                            <option>Магазин 3</option>
+                            <option>Магазин 4</option>
+                            <option>Магазин 5</option>
+                            <option>Магазин 6</option>
+                            <option>Магазин 7</option>
+                            <option>Магазин 8</option>
+                        </select>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="button create-block__button">Сохранить изменения</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+            <div class="page__footer"></div>
+        </div>
+    </section>
+
+    <script src="js/nativejs-select.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

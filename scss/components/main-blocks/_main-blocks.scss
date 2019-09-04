@@ -45,6 +45,20 @@
     line-height: 19px;
     width: 100%;
     margin-bottom: 17px;
+
+    &--cashier {
+      margin-bottom: 12px;
+      min-height: 38px;
+    }
+  }
+
+  &__description {
+    font-family: $titleFont;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #616161;
+    margin-bottom: 15px;
   }
 
   &__link {
@@ -68,11 +82,23 @@
       width: 16px;
     }
 
+    &--yellow {
+      color: $yellow;
+    }
+
     &--delete {
       &:before {
         top: -4px;
         height: 20px;
         background-image: url('../img/delete-icon.svg');
+      }
+    }
+
+    &--delete_yellow {
+      &:before {
+        top: -4px;
+        height: 20px;
+        background-image: url('../img/delete-icon-yellow.svg');
       }
     }
 
@@ -88,6 +114,13 @@
         top: 1px;
         height: 14px;
         background-image: url('../img/reset-icon.svg');
+      }
+    }
+
+    &--edit {
+      &:before {
+        height: 16px;
+        background-image: url('../img/edit-icon.svg');
       }
     }
   }
