@@ -6,6 +6,12 @@
   margin-top: 65px;
   margin-left: -38px;
 
+  &--opened_item {
+    .main-blocks__item:not(.main-blocks__item--create):not(.main-blocks__item--opened) {
+      opacity: 0.5;
+    }
+  }
+
   &__item {
     margin-left: 38px;
     margin-bottom: 38px;
@@ -16,10 +22,12 @@
     flex-direction: column;
     width: calc(33.33% - 38px);
     padding: 18px 32px;
+    transition: 0.3s;
+    position: relative;
 
     &--create {
-      box-shadow: none;
-      border: 1px dashed $yellow;
+      box-shadow: 0px 2px 12px rgba(117, 117, 117, 0.1);
+      border: 2px dashed $yellow;
       padding: 43px 0 31px;
       cursor: pointer;
       align-items: center;
@@ -36,6 +44,31 @@
         margin-top: 27px;
       }
     }
+
+    &--shop {
+      padding: 0;
+    }
+  }
+
+  &__item-absolute {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0px 2px 12px rgba(117, 117, 117, 0.1);
+    padding: 18px 32px;
+
+    &--active {
+      position: absolute;
+      background: white;
+      height: auto;
+      z-index: 10;
+    }
+  }
+
+  &__with-buttons {
+    display: flex;
   }
 
   &__title {
@@ -50,6 +83,13 @@
       margin-bottom: 12px;
       min-height: 38px;
     }
+
+    &--shop {
+      color: #616161;
+      line-height: 22px;
+      margin-bottom: 3px;
+      margin-right: auto;
+    }
   }
 
   &__description {
@@ -59,6 +99,10 @@
     line-height: 16px;
     color: #616161;
     margin-bottom: 15px;
+
+    &--shop {
+      margin-bottom: 10px;
+    }
   }
 
   &__link {
@@ -120,8 +164,66 @@
     &--edit {
       &:before {
         height: 16px;
-        background-image: url('../img/edit-icon.svg');
+        background-image: url('../img/edit-icon-yellow.svg');
       }
     }
+
+    &--shop_cashier {
+      padding-left: 18px;
+      margin-right: auto;
+      margin-bottom: 9px;
+
+      &:before {
+        top: 2px;
+        width: 12px;
+        height: 12px;
+        background-image: url('../img/shop-cashier-icon.png');
+      }
+    }
+
+    &--more {
+      padding-left: 17px;
+      margin-bottom: 2px;
+      cursor: pointer;
+
+      &:before {
+        top: 5px;
+        width: 11px;
+        height: 7px;
+        background-image: url('../img/select.png');
+      }
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__button {
+    margin-right: 6px;
+    display: block;
+    width: 15px;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &--delete {
+      width: 13px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.more-cashiers {
+  display: none;
+
+  &--visible {
+    display: block;
   }
 }
