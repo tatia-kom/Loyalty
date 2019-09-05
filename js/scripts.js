@@ -42,9 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementsByTagName('body')[0].addEventListener('click', function() {
-        shopBlock.classList.remove('main-blocks--opened_item');
-        document.getElementsByClassName('more-cashiers--visible')[0].classList.remove('more-cashiers--visible');
-        document.getElementsByClassName('main-blocks__link--hidden')[0].classList.remove('main-blocks__link--hidden');
-        document.getElementsByClassName('main-blocks__item--opened')[0].classList.remove('main-blocks__item--opened');
+        if (shopBlock) {
+            shopBlock.classList.remove('main-blocks--opened_item');
+            document.getElementsByClassName('more-cashiers--visible')[0].classList.remove('more-cashiers--visible');
+            document.getElementsByClassName('main-blocks__link--hidden')[0].classList.remove('main-blocks__link--hidden');
+            document.getElementsByClassName('main-blocks__item--opened')[0].classList.remove('main-blocks__item--opened');
+        }
     });
 });
