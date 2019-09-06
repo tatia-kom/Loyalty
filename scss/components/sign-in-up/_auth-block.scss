@@ -93,11 +93,37 @@
     margin-top: 15px;
 
     @include placeholderColor(rgba(0, 0, 0, 0.5));
+
+    &--error {
+      border-color: red;
+    }
+
+    &--correct {
+      border-color: green;
+    }
+  }
+
+  &__hint {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px 10px 0;
+    color: #616161;
+
+    &--error {
+      color: red;
+    }
+
+    &--correct {
+      color: green;
+    }
   }
 
   &__forget {
     text-align: center;
-    margin-top: 9px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__link {
@@ -105,6 +131,8 @@
     font-size: 10.8467px;
     line-height: 14px;
     color: black;
+    display: block;
+    margin: 0 20px;
 
     &:hover {
       color: $yellow;
@@ -113,7 +141,7 @@
 
   &__choice {
     display: flex;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
   }
 
   &__button {
