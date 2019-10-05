@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Создание нового кассира</title>
+    <title>Программа лояльности</title>
 
-    <link rel="stylesheet" type="text/css" href="css/select-default-style.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
 </head>
@@ -30,7 +29,7 @@
                 <span class="menu__icon"><img src="img/menu3.svg" alt=""></span>
                 Мои магазины
             </a>
-            <a href="#" class="menu__link menu__link--active">
+            <a href="#" class="menu__link">
                 <span class="menu__icon"><img src="img/menu4.svg" alt=""></span>
                 Кассиры
             </a>
@@ -42,7 +41,7 @@
                 <span class="menu__icon"><img src="img/menu6.svg" alt=""></span>
                 Тарифы
             </a>
-            <a href="#" class="menu__link">
+            <a href="#" class="menu__link menu__link--active">
                 <span class="menu__icon"><img src="img/menu7.svg" alt=""></span>
                 Программа лояльности
             </a>
@@ -73,42 +72,20 @@
 
                 <div class="page__top page__top--create">
                     <span class="page__back"><img src="img/back.svg" alt=""></span>
-                    <h1 class="page__title page__title--create">Создание нового кассира</h1>
+                    <h1 class="page__title page__title--create">Программа лояльности<span class="page__edit"><img src="img/program-edit.svg" alt=""></span></h1>
                 </div>
 
                 <div class="create-block">
-                    <p class="create-block__label create-block__label--bold">Введите данные кассира</p>
-
-                    <p class="create-block__label create-block__label--light">Имя</p>
-                    <input type="text" class="create-block__input create-block__input--full">
-                    <p class="create-block__label create-block__label--light">Фамилия</p>
-                    <input type="text" class="create-block__input create-block__input--full">
-                    <p class="create-block__label create-block__label--light">Отчество</p>
-                    <input type="text" class="create-block__input create-block__input--full">
-                    <p class="create-block__label create-block__label--light">E-mail кассира</p>
-                    <input type="text" class="create-block__input create-block__input--full">
-                    <p class="create-block__label create-block__label--light">Выбрать магазин</p>
-                    <div class="create-block__select">
-                        <select data-placeholder="Магазин" class="js-custom_select">
-                            <option>Магазин 1</option>
-                            <option>Магазин 2</option>
-                            <option>Магазин 3</option>
-                            <option>Магазин 4</option>
-                            <option>Магазин 5</option>
-                            <option>Магазин 6</option>
-                            <option>Магазин 7</option>
-                            <option>Магазин 8</option>
-                        </select>
-                    </div>
-
-                    <label class="checkbox">
-                        <input type="checkbox" class="checkbox__input" checked>
-                        <div class="checkbox__text">Отправить пароль кассиру на почту</div>
-                    </label>
-
-                    <div class="text-center">
-                        <button class="button create-block__button">Сохранить</button>
-                    </div>
+                    <p class="lk__text lk__text--big"><strong>Название программы лояльности:</strong> «Программа лояльности 1»</p>
+                    <p class="lk__text lk__text--big"><strong>Уровень карт:</strong> 1 Уровень «Базовая ставка»</p>
+                    <p class="lk__text lk__text--big"><strong>Правило начисления бонусов:</strong> Не начисляются</p>
+                    <p class="lk__text lk__text--big"><strong>Правило сгорания бонусов:</strong> Не сгорают</p>
+                    <p class="lk__text lk__text--big"><strong>Правило активации бонусов:</strong> С момента начисления</p>
+                    <p class="lk__text lk__text--big"><strong>Правило списания бонусов:</strong> Не использовать для оплаты покупок</p>
+                    <p class="lk__text lk__text--big"><strong>Правило предоставления скидки:</strong> Не предоставляется</p>
+                    <p class="lk__text lk__text--big"><strong>Дополнительные настройки:</strong> Не начислять бонусы, если при оплате производится списание бонусов</p>
+                    <p class="lk__text lk__text--big"><strong>Округление бонусов:</strong> Не округлять</p>
+                    <p class="lk__text lk__text--big"><strong>СМС-уведомления:</strong> Отправлять СМС проверку при регистрации в системе</p>
                 </div>
 
             </div>
@@ -119,7 +96,6 @@
         </div>
     </section>
 
-    <script src="js/nativejs-select.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

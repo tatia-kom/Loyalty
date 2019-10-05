@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Создание программы лояльности</title>
+    <title>Создание акции</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
@@ -19,7 +19,7 @@
             <!-- Add class "menu__link--active" for active link like below -->
             <a href="#" class="menu__link menu__link--active">
                 <span class="menu__icon"><img src="img/menu1.svg" alt=""></span>
-                Программы лояльности
+                Акции
             </a>
             <a href="#" class="menu__link">
                 <span class="menu__icon"><img src="img/menu2.svg" alt=""></span>
@@ -40,6 +40,10 @@
             <a href="#" class="menu__link">
                 <span class="menu__icon"><img src="img/menu6.svg" alt=""></span>
                 Тарифы
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu7.svg" alt=""></span>
+                Программа лояльности
             </a>
         </nav>
 
@@ -63,16 +67,17 @@
 
             <!-- CONTENT -->
 
-            <div class="page__content page__content--create">
+            <section class="page__content-wrap">
+                <div class="page__content page__content--create">
 
                 <div class="page__top page__top--create">
                     <span class="page__back"><img src="img/back.svg" alt=""></span>
-                    <h1 class="page__title page__title--create">Создание программы лояльности</h1>
+                    <h1 class="page__title page__title--create">Создание акции</h1>
                 </div>
 
                 <div class="create-block">
-                    <p class="create-block__label">Название программы лояльности</p>
-                    <input type="text" placeholder="Введите название программы лояльности" class="create-block__input create-block__input--full">
+                    <p class="create-block__label">Название акции</p>
+                    <input type="text" placeholder="Введите название акции" class="create-block__input create-block__input--full">
 
                     <div class="create-block__group">
                         <p class="create-block__label">Уровень карт</p>
@@ -131,13 +136,6 @@
                     </div>
 
                     <div class="create-block__group">
-                        <p class="create-block__label">Правило списания бонусов</p>
-                        <div class="create-block__with-input">
-                            За<input type="text" class="create-block__input create-block__input--small">бонусов<input type="text" class="create-block__input create-block__input--small">рублей
-                        </div>
-                    </div>
-
-                    <div class="create-block__group">
                         <p class="create-block__label">Правило сгорания бонусов</p>
                         <label class="radio radio--create">
                             <input type="radio" class="radio__input" name="programmBonusBurn" checked>
@@ -166,6 +164,20 @@
                     </div>
 
                     <div class="create-block__group">
+                        <p class="create-block__label">Правило списания бонусов</p>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmOutRule" checked>
+                            <div class="radio__text">Не использовать для оплаты покупок</div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmOutRule">
+                            <div class="radio__text create-block__radio-with-input">
+                                Оплачивать не более<span class="create-block__percent-input"><input type="text" class="create-block__input create-block__input--small"></span>от суммы покупки, если на счету не менее<input type="text" class="create-block__input create-block__input--small">бонусов
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group">
                         <p class="create-block__label">Правило предоставления скидки</p>
                         <label class="radio radio--create">
                             <input type="radio" class="radio__input" name="programmSaleRule" checked>
@@ -176,32 +188,6 @@
                             <div class="radio__text create-block__radio-with-input">
                                 При накоплении более<input type="text" class="create-block__input create-block__input--small">бонусов предоставить скидку в размере
                                 <span class="create-block__percent-input"><input type="text" class="create-block__input create-block__input--small"></span>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div class="create-block__group">
-                        <p class="create-block__label">Дополнительные настройки</p>
-                        <label class="radio radio--create">
-                            <input type="radio" class="radio__input" name="programmSettings" checked>
-                            <div class="radio__text">Не начислять бонусы, если при оплате производится списание бонусов</div>
-                        </label>
-                        <label class="radio radio--create">
-                            <input type="radio" class="radio__input" name="programmSettings">
-                            <div class="radio__text create-block__radio-with-input">
-                                Начислять<input type="text" class="create-block__input create-block__input--small">бонусов при регистрации
-                            </div>
-                        </label>
-                        <label class="radio radio--create">
-                            <input type="radio" class="radio__input" name="programmSettings">
-                            <div class="radio__text create-block__radio-with-input">
-                                Начислять<input type="text" class="create-block__input create-block__input--small">бонусов при совершении первой покупки
-                            </div>
-                        </label>
-                        <label class="radio radio--create">
-                            <input type="radio" class="radio__input" name="programmSettings">
-                            <div class="radio__text create-block__radio-with-input">
-                                Начислять<input type="text" class="create-block__input create-block__input--small">бонусов в день рождения клиента
                             </div>
                         </label>
                     </div>
@@ -227,24 +213,10 @@
                     </div>
 
                     <div class="create-block__group">
-                        <p class="create-block__label">СМС-УВЕДОМЛЕНИЯ</p>
+                        <p class="create-block__label">Дополнительные настройки</p>
                         <label class="radio radio--create">
-                            <input type="radio" class="radio__input" name="programmSms" checked>
-                            <div class="radio__text">Отправлять СМС проверку при регистрации в системе</div>
-                        </label>
-                        <label class="radio radio--create">
-                            <input type="radio" class="radio__input" name="programmSms">
-                            <div class="radio__text">Отправлять СМС о начислении бонусов</div>
-                        </label>
-                        <label class="radio radio--create">
-                            <input type="radio" class="radio__input" name="programmSms">
-                            <div class="radio__text">Отправлять СМС о списании бонусов</div>
-                        </label>
-                        <label class="radio radio--create">
-                            <input type="radio" class="radio__input" name="programmSms">
-                            <div class="radio__text create-block__radio-with-input">
-                                Отправлять СМС за<input type="text" class="create-block__input create-block__input--small">дней о сгорании бонусов
-                            </div>
+                            <input type="radio" class="radio__input" name="programmSettings" checked>
+                            <div class="radio__text">Не начислять бонусы, если при оплате производится списание бонусов</div>
                         </label>
                     </div>
 
@@ -254,6 +226,7 @@
                 </div>
 
             </div>
+            </section>
 
             <!-- FOOTER -->
             <div class="page__footer"></div>
