@@ -12,6 +12,12 @@
     }
   }
 
+  &--levels {
+    .main-blocks__item {
+      min-height: 156px;
+    }
+  }
+
   &__item {
     margin-left: 38px;
     margin-bottom: 38px;
@@ -108,6 +114,14 @@
     }
   }
 
+  &__pre-link {
+    font-family: $titleFont;
+    font-size: 14px;
+    line-height: 16px;
+    color: #616161;
+    margin-bottom: 15px;
+  }
+
   &__description {
     font-family: $titleFont;
     font-weight: 300;
@@ -181,6 +195,13 @@
       &:before {
         height: 16px;
         background-image: url('../img/edit-icon-yellow.svg');
+      }
+    }
+
+    &--edit_black {
+      &:before {
+        height: 16px;
+        background-image: url('../img/edit-icon.svg');
       }
     }
 
