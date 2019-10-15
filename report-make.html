@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Отчеты формирование</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+</head>
+<!-- Add to body class "modal-opened" when modal is shown like below -->
+<body>
+    <section class="page">
+
+        <!-- MENU -->
+
+        <nav class="menu">
+            <!-- Add class "menu__link--active" for active link like below -->
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu1.svg" alt=""></span>
+                Акции
+            </a>
+            <a href="#" class="menu__link menu__link--active">
+                <span class="menu__icon"><img src="img/menu2.svg" alt=""></span>
+                Отчёты
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu3.svg" alt=""></span>
+                Мои магазины
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu4.svg" alt=""></span>
+                Кассиры
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu5.svg" alt=""></span>
+                СМС-рассылки
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu6.svg" alt=""></span>
+                Тарифы
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu7.svg" alt=""></span>
+                Программа лояльности
+            </a>
+        </nav>
+
+        <div class="page__block">
+
+            <!-- HEADER -->
+
+            <div class="page__header">
+                <div class="page__profile" id="header-profile">
+                    <div class="page__ava">KK</div>
+                    <p class="page__name">
+                        Константин Константинопольский
+                        <span class="page__company">Название компании</span>
+                    </p>
+                    <div class="page__profile-menu" id="header-profile-menu">
+                        <a href="#">Настройки</a>
+                        <a href="#">Выйти</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+
+            <section class="page__content-wrap">
+                <div class="page__content">
+
+                <!-- Add class "report-make--opened" to the opened block like below -->
+                <div class="report-make report-make--opened">
+                    <div class="report-make__top">Общий отчет</div>
+                    <div class="report-make__content">
+                        <div class="report-make__date-block">
+                            <span class="report-make__date-label">За период с</span>
+                            <span class="create-block__date-input report-make__date-input"><input type="text" class="create-block__input create-block__input--full create-block__input--date"></span>
+                            <span class="report-make__date-label">по</span>
+                            <span class="create-block__date-input report-make__date-input"><input type="text" class="create-block__input create-block__input--full create-block__input--date"></span>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите программу лояльности</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">Все программы лояльности</div>
+                                <ul class="create-block__select-list">
+                                    <li>Программа лояльности 1</li>
+                                    <li>Программа лояльности 2</li>
+                                    <li>Программа лояльности 3</li>
+                                    <li>Программа лояльности 4</li>
+                                    <li>Программа лояльности 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите магазин:</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">
+                                    <div class="report-make__option">Магазин 1 <span class="report-make__option-clear"></span></div>
+                                    <div class="report-make__option">Магазин 2 <span class="report-make__option-clear"></span></div>
+                                </div>
+                                <ul class="create-block__select-list">
+                                    <li>Магазин 1</li>
+                                    <li>Магазин 2</li>
+                                    <li>Магазин 3</li>
+                                    <li>Магазин 4</li>
+                                    <li>Магазин 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите кассира:</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">Все кассиры</div>
+                                <ul class="create-block__select-list">
+                                    <li>Кассир 1</li>
+                                    <li>Кассир 2</li>
+                                    <li>Кассир 3</li>
+                                    <li>Кассир 4</li>
+                                    <li>Кассир 5</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="button create-block__button">СФОРМИРОВАТЬ ОТЧЁТ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="report-make">
+                    <div class="report-make__top">Отчёт о покупателях</div>
+                    <div class="report-make__content">
+                        <div class="report-make__date-block">
+                            <span class="report-make__date-label">За период с</span>
+                            <span class="create-block__date-input report-make__date-input"><input type="text" class="create-block__input create-block__input--full create-block__input--date"></span>
+                            <span class="report-make__date-label">по</span>
+                            <span class="create-block__date-input report-make__date-input"><input type="text" class="create-block__input create-block__input--full create-block__input--date"></span>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите программу лояльности</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">Все программы лояльности</div>
+                                <ul class="create-block__select-list">
+                                    <li>Программа лояльности 1</li>
+                                    <li>Программа лояльности 2</li>
+                                    <li>Программа лояльности 3</li>
+                                    <li>Программа лояльности 4</li>
+                                    <li>Программа лояльности 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите магазин:</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">
+                                    <div class="report-make__option">Магазин 1 <span class="report-make__option-clear"></span></div>
+                                    <div class="report-make__option">Магазин 2 <span class="report-make__option-clear"></span></div>
+                                </div>
+                                <ul class="create-block__select-list">
+                                    <li>Магазин 1</li>
+                                    <li>Магазин 2</li>
+                                    <li>Магазин 3</li>
+                                    <li>Магазин 4</li>
+                                    <li>Магазин 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите кассира:</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">Все кассиры</div>
+                                <ul class="create-block__select-list">
+                                    <li>Кассир 1</li>
+                                    <li>Кассир 2</li>
+                                    <li>Кассир 3</li>
+                                    <li>Кассир 4</li>
+                                    <li>Кассир 5</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="button create-block__button">СФОРМИРОВАТЬ ОТЧЁТ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="report-make">
+                    <div class="report-make__top">Отчёт о покупках</div>
+                    <div class="report-make__content">
+                        <div class="report-make__date-block">
+                            <span class="report-make__date-label">За период с</span>
+                            <span class="create-block__date-input report-make__date-input"><input type="text" class="create-block__input create-block__input--full create-block__input--date"></span>
+                            <span class="report-make__date-label">по</span>
+                            <span class="create-block__date-input report-make__date-input"><input type="text" class="create-block__input create-block__input--full create-block__input--date"></span>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите программу лояльности</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">Все программы лояльности</div>
+                                <ul class="create-block__select-list">
+                                    <li>Программа лояльности 1</li>
+                                    <li>Программа лояльности 2</li>
+                                    <li>Программа лояльности 3</li>
+                                    <li>Программа лояльности 4</li>
+                                    <li>Программа лояльности 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите магазин:</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">
+                                    <div class="report-make__option">Магазин 1 <span class="report-make__option-clear"></span></div>
+                                    <div class="report-make__option">Магазин 2 <span class="report-make__option-clear"></span></div>
+                                </div>
+                                <ul class="create-block__select-list">
+                                    <li>Магазин 1</li>
+                                    <li>Магазин 2</li>
+                                    <li>Магазин 3</li>
+                                    <li>Магазин 4</li>
+                                    <li>Магазин 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите кассира:</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">Все кассиры</div>
+                                <ul class="create-block__select-list">
+                                    <li>Кассир 1</li>
+                                    <li>Кассир 2</li>
+                                    <li>Кассир 3</li>
+                                    <li>Кассир 4</li>
+                                    <li>Кассир 5</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="button create-block__button">СФОРМИРОВАТЬ ОТЧЁТ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="report-make">
+                    <div class="report-make__top">СМС-отчёт</div>
+                    <div class="report-make__content">
+                        <div class="report-make__date-block">
+                            <span class="report-make__date-label">За период с</span>
+                            <span class="create-block__date-input report-make__date-input"><input type="text" class="create-block__input create-block__input--full create-block__input--date"></span>
+                            <span class="report-make__date-label">по</span>
+                            <span class="create-block__date-input report-make__date-input"><input type="text" class="create-block__input create-block__input--full create-block__input--date"></span>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите программу лояльности</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">Все программы лояльности</div>
+                                <ul class="create-block__select-list">
+                                    <li>Программа лояльности 1</li>
+                                    <li>Программа лояльности 2</li>
+                                    <li>Программа лояльности 3</li>
+                                    <li>Программа лояльности 4</li>
+                                    <li>Программа лояльности 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите магазин:</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">
+                                    <div class="report-make__option">Магазин 1 <span class="report-make__option-clear"></span></div>
+                                    <div class="report-make__option">Магазин 2 <span class="report-make__option-clear"></span></div>
+                                </div>
+                                <ul class="create-block__select-list">
+                                    <li>Магазин 1</li>
+                                    <li>Магазин 2</li>
+                                    <li>Магазин 3</li>
+                                    <li>Магазин 4</li>
+                                    <li>Магазин 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="create-block__group">
+                            <p class="report-make__label">Выберите кассира:</p>
+
+                            <!-- Add class "create-block__select--opened" to show select options list like below -->
+                            <div class="create-block__select create-block__select--opened">
+                                <div class="create-block__select-value report-make__selected-values">Все кассиры</div>
+                                <ul class="create-block__select-list">
+                                    <li>Кассир 1</li>
+                                    <li>Кассир 2</li>
+                                    <li>Кассир 3</li>
+                                    <li>Кассир 4</li>
+                                    <li>Кассир 5</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="button create-block__button">СФОРМИРОВАТЬ ОТЧЁТ</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+
+            <!-- FOOTER -->
+            <div class="page__footer"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
