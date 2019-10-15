@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Настройки</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+</head>
+<!-- Add to body class "modal-opened" when modal is shown like below -->
+<body>
+    <section class="page">
+
+        <!-- MENU -->
+
+        <nav class="menu">
+            <!-- Add class "menu__link--active" for active link like below -->
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu1.svg" alt=""></span>
+                Акции
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu2.svg" alt=""></span>
+                Отчёты
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu3.svg" alt=""></span>
+                Мои магазины
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu4.svg" alt=""></span>
+                Кассиры
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu5.svg" alt=""></span>
+                СМС-рассылки
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu6.svg" alt=""></span>
+                Тарифы
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu7.svg" alt=""></span>
+                Программа лояльности
+            </a>
+        </nav>
+
+        <div class="page__block">
+
+            <!-- HEADER -->
+
+            <div class="page__header">
+                <div class="page__profile" id="header-profile">
+                    <div class="page__ava">KK</div>
+                    <p class="page__name">
+                        Константин Константинопольский
+                        <span class="page__company">Название компании</span>
+                    </p>
+                    <div class="page__profile-menu" id="header-profile-menu">
+                        <a href="#">Настройки</a>
+                        <a href="#">Выйти</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+
+            <section class="page__content-wrap">
+                <div class="page__content page__content--settings">
+
+                    <h1 class="page__title">Настройки</h1>
+
+                    <div class="settings">
+                        <div class="settings__block">
+                            <div class="settings__top">
+                                <p class="settings__name">Общие</p>
+                                <p class="settings__hint settings__hint--success">Изменения внесены</p>
+                            </div>
+
+                            <div class="settings__form">
+                                <p class="create-block__label create-block__label--light">Имя</p>
+                                <input type="text" class="create-block__input create-block__input--full" value="Константин">
+
+                                <p class="create-block__label create-block__label--light">Фамилия</p>
+                                <input type="text" class="create-block__input create-block__input--full" value="Константинопольский">
+
+                                <p class="create-block__label create-block__label--light">Название компании</p>
+                                <input type="text" class="create-block__input create-block__input--full" value="БелЛегПром">
+                            </div>
+
+                            <button class="button settings__button">Сохранить</button>
+                        </div>
+                        <div class="settings__block">
+                            <div class="settings__top">
+                                <p class="settings__name">E-mail</p>
+                            </div>
+
+                            <div class="settings__form">
+                                <p class="create-block__label create-block__label--light">Текущий E-mail</p>
+                                <input type="text" class="create-block__input create-block__input--full" value="name@mail.com">
+
+                                <p class="create-block__label create-block__label--light">Новый E-mail</p>
+                                <input type="text" class="create-block__input create-block__input--full">
+                            </div>
+
+                            <button class="button settings__button">Сохранить</button>
+                        </div>
+                        <div class="settings__block">
+                            <div class="settings__top">
+                                <p class="settings__name">Пароль</p>
+                                <p class="settings__hint settings__hint--error">Ошибка заполнения поля</p>
+                            </div>
+
+                            <div class="settings__form">
+                                <p class="create-block__label create-block__label--light">Текущий пароль</p>
+                                <!-- Add class "create-block__input--error" for input with error like below -->
+                                <input type="password" class="create-block__input create-block__input--full create-block__input--error" value="**********">
+
+                                <p class="create-block__label create-block__label--light">Новый пароль</p>
+                                <input type="password" class="create-block__input create-block__input--full">
+
+                                <p class="create-block__label create-block__label--light">Подтвердить новый пароль</p>
+                                <input type="password" class="create-block__input create-block__input--full">
+                            </div>
+
+                            <button class="button settings__button">Сохранить</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <div class="page__footer"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

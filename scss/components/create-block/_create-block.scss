@@ -66,6 +66,10 @@
     &--edit {
       padding-right: 50px;
     }
+
+    &--error {
+      border-color: #FF2525;
+    }
   }
 
   &__group {
