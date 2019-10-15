@@ -282,4 +282,19 @@
     bottom: 10px;
     right: 22px;
   }
+
+  &__sms-textarea {
+    background: white;
+    border-radius: 8px;
+    border: 0;
+    resize: none;
+    width: 100%;
+    font-family: $textFont;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 48px 43px 56px 47px;
+    color: $textColor;
+    min-height: 179px;
+    overflow: visible;
+  }
 }
