@@ -7,7 +7,6 @@
 
     <title>Редактирование кассира</title>
 
-    <link rel="stylesheet" type="text/css" href="css/select-default-style.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
 </head>
@@ -104,17 +103,16 @@
                     </div>
 
                     <p class="create-block__label create-block__label--light">Выбрать магазин</p>
+                    <!-- Add class "create-block__select--opened" to show select options list -->
                     <div class="create-block__select create-block__select--edit">
-                        <select data-placeholder="Магазин" class="js-custom_select">
-                            <option>Магазин 1</option>
-                            <option>Магазин 2</option>
-                            <option>Магазин 3</option>
-                            <option>Магазин 4</option>
-                            <option>Магазин 5</option>
-                            <option>Магазин 6</option>
-                            <option>Магазин 7</option>
-                            <option>Магазин 8</option>
-                        </select>
+                        <div class="create-block__select-value">Магазин 1</div>
+                        <ul class="create-block__select-list">
+                            <li>Магазин 1</li>
+                            <li>Магазин 2</li>
+                            <li>Магазин 3</li>
+                            <li>Магазин 4</li>
+                            <li>Магазин 5</li>
+                        </ul>
                     </div>
 
                     <div class="text-center">
@@ -130,7 +128,6 @@
         </div>
     </section>
 
-    <script src="js/nativejs-select.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
