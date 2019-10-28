@@ -39,17 +39,18 @@
 
                 <div class="page__top page__top--create">
                     <span class="page__back"><img src="img/back.svg" alt=""></span>
-                    <h1 class="page__title page__title--create">Информация о покупателе</h1>
+                    <h1 class="page__title page__title--customer_small">Информация о покупателе</h1>
                 </div>
 
-                <div class="create-block customer__block">
-                    <p class="customer__text">Всего бонусов на счету: <strong>20 000</strong></p>
-                    <p class="customer__text">Доступные бонусы: <strong>5 000</strong></p>
-                    <p class="customer__text">Сумма к оплате с учетом бонусов: <strong>5 000</strong></p>
+                <div class="create-block customer__block customer__block--small">
+                    <p class="create-block__label create-block__label--light">Имя покупателя:<span class="customer__name">Иван Иванов</span><span class="customer__edit"><img src="img/edit-icon.svg" alt=""></span></p>
+                    <p class="create-block__label create-block__label--light customer__label">Всего бонусов на счету:<span class="customer__name">20 000</span></p>
+                    <p class="create-block__label create-block__label--light customer__label">Доступные бонусы:<span class="customer__name">5 000</span></p>
+                    <p class="create-block__label create-block__label--light customer__label">Списать бонусов:<input type="text" class="create-block__input create-block__input--small"></p>
 
-                    <div class="text-center">
-                        <button class="button create-block__button">Использовать бонусы</button>
-                        <button class="button create-block__button create-block__button--second button--black">Не использовать бонусы</button>
+                    <div class="customer__flex-buttons">
+                        <button class="button customer__button">Использовать бонусы</button>
+                        <button class="button customer__button button--black">Не использовать<br>бонусы</button>
                     </div>
                 </div>
 
