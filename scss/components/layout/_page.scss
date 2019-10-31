@@ -254,4 +254,19 @@
     height: 61px;
     flex-shrink: 0;
   }
+
+  &__top-checks {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+    .radio__text:before {
+      background: transparent;
+    }
+  }
+
+  &__top-checks-text {
+    font-size: 14px;
+    margin-right: 10px;
+  }
 }
