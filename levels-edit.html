@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Уровень</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+</head>
+<body>
+    <section class="page">
+
+        <!-- MENU -->
+
+        <nav class="menu">
+            <!-- Add class "menu__link--active" for active link like below -->
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu1.svg" alt=""></span>
+                Акции
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu2.svg" alt=""></span>
+                Отчёты
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu3.svg" alt=""></span>
+                Мои магазины
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu4.svg" alt=""></span>
+                Кассиры
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu5.svg" alt=""></span>
+                СМС-рассылки
+            </a>
+            <a href="#" class="menu__link">
+                <span class="menu__icon"><img src="img/menu6.svg" alt=""></span>
+                Тарифы
+            </a>
+            <a href="#" class="menu__link menu__link--active">
+                <span class="menu__icon"><img src="img/menu7.svg" alt=""></span>
+                Программа лояльности
+            </a>
+        </nav>
+
+        <div class="page__block">
+
+            <!-- HEADER -->
+
+            <div class="page__header">
+                <div class="page__profile" id="header-profile">
+                    <div class="page__ava">KK</div>
+                    <p class="page__name">
+                        Константин Константинопольский
+                        <span class="page__company">Название компании</span>
+                    </p>
+                    <div class="page__profile-menu" id="header-profile-menu">
+                        <a href="#">Настройки</a>
+                        <a href="#">Выйти</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+
+            <section class="page__content-wrap">
+                <div class="page__content page__content--create">
+
+                <div class="page__top page__top--create">
+                    <span class="page__back"><img src="img/back.svg" alt=""></span>
+                    <h1 class="page__title page__title--create">Уровень</h1>
+                </div>
+
+                <div class="create-block">
+                    <p class="create-block__label">Название уровня</p>
+                    <input type="text" placeholder="Введите название уровня" class="create-block__input create-block__input--full">
+
+                    <div class="create-block__group">
+                        <p class="create-block__label">Уровень карт</p>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmLevel1">
+                            <div class="radio__text create-block__radio-with-input">
+                                Разовая покупка от<input type="text" class="create-block__input create-block__input--small">
+                            </div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmLevel1" checked>
+                            <div class="radio__text create-block__radio-with-input">
+                                Общая сумма покупок<input type="text" class="create-block__input create-block__input--small">
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group">
+                        <p class="create-block__label">Правило начисления бонусов</p>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusAdd" checked>
+                            <div class="radio__text">Не начисляются</div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusAdd">
+                            <div class="radio__text create-block__radio-with-input">
+                                Начислять<span class="create-block__percent-input"><input type="text" class="create-block__input create-block__input--small"></span>от суммы покупки
+                            </div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusAdd">
+                            <div class="radio__text create-block__radio-with-input">
+                                За<input type="text" class="create-block__input create-block__input--small">рублей<input type="text" class="create-block__input create-block__input--small">бонусов
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group">
+                        <p class="create-block__label">Правило списания бонусов</p>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmOutRule" checked>
+                            <div class="radio__text">Не использовать для оплаты покупок</div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmOutRule">
+                            <div class="radio__text create-block__radio-with-input">
+                                Оплачивать не более<span class="create-block__percent-input"><input type="text" class="create-block__input create-block__input--small"></span>от суммы покупки, если на счету не менее<input type="text" class="create-block__input create-block__input--small">бонусов
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group">
+                        <p class="create-block__label">Правило сгорания бонусов</p>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusBurn" checked>
+                            <div class="radio__text">Не сгорают</div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusBurn">
+                            <div class="radio__text create-block__radio-with-input">
+                                Сгорают через<input type="text" class="create-block__input create-block__input--small">дней после начисления
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group">
+                        <p class="create-block__label">Правило активации бонусов</p>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusActivation" checked>
+                            <div class="radio__text">С момента начисления</div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmBonusActivation">
+                            <div class="radio__text create-block__radio-with-input">
+                                Через<input type="text" class="create-block__input create-block__input--small">дней с момента начисления
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group">
+                        <p class="create-block__label">Правило предоставления скидки</p>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmSaleRule" checked>
+                            <div class="radio__text">Не предоставляется</div>
+                        </label>
+                        <label class="radio radio--create">
+                            <input type="radio" class="radio__input" name="programmSaleRule">
+                            <div class="radio__text create-block__radio-with-input">
+                                При накоплении более<input type="text" class="create-block__input create-block__input--small">бонусов предоставить скидку в размере
+                                <span class="create-block__percent-input"><input type="text" class="create-block__input create-block__input--small"></span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="create-block__group create-block__group--big">
+                        <p class="create-block__label">Дополнительные настройки</p>
+                        <label class="checkbox radio--create">
+                            <input type="checkbox" class="checkbox__input" name="programmSettings" checked>
+                            <div class="checkbox__text checkbox__text--big_left">Не начислять бонусы, если при оплате производится списание бонусов</div>
+                        </label>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="button create-block__button">Сохранить</button>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+
+            <!-- FOOTER -->
+            <div class="page__footer"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
